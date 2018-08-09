@@ -1,18 +1,12 @@
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 
 import { AppComponent } from './app.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [ BrowserModule ],
+  declarations: [ AppComponent ],
+  providers: [ { provide: LOCALE_ID, useValue: 'fr' } ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
