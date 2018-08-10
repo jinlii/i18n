@@ -9,6 +9,27 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+  Merge with the JIT compiler
+
+  <p>
+  The JIT compiler compiles the app in the browser as the app loads. Translation with the JIT compiler is a dynamic process of:
+  </p>
+
+  <p>
+  Importing the appropriate language translation file as a string constant.
+  Creating corresponding translation providers for the JIT compiler.
+  Bootstrapping the app with those providers.
+  Three providers tell the JIT compiler how to translate the template texts for a particular language while compiling the app:
+  </p>
+
+  <p>
+  TRANSLATIONS is a string containing the content of the translation file.<br/>
+  TRANSLATIONS_FORMAT is the format of the file: xlf, xlf2, or xtb.<br/>
+  LOCALE_ID is the locale of the target language.<br/>
+  </p>
+
+
   <app-root></app-root>
 </body>
 </html>
