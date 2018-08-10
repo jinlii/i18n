@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 @NgModule({
   imports: [ BrowserModule ],
   declarations: [ AppComponent ],
-  providers: [ { provide: LOCALE_ID, useValue: 'fr' } ],
+  // Provide this token to set the locale of your application.
+  // It is used for i18n extraction, by i18n pipes (DatePipe, I18nPluralPipe, CurrencyPipe, DecimalPipe and PercentPipe) and by ICU expressions.
+  providers: [ { provide: LOCALE_ID, useValue: 'en-US' } ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
